@@ -19,3 +19,17 @@ dynamic = ["dependencies"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
+
+
+[tool.ruff]
+lint.select = ["I"]
+line-length = 90
+indent-width = 2
+
+# Target Python 3.10
+target-version = "py310"
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+
